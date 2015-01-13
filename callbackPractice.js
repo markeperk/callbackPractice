@@ -117,8 +117,8 @@ each(names, function(item, indice){
 
 var getUserById = function(obj, item, callback) {
   for (var i = 0; i < obj.length; i++) {
-    if (users[i].id === '16t') {
-      callback(users[i]);
+    if (obj[i].id === item) {
+      callback(obj[i]);
     }
   }
 };
